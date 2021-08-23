@@ -25,7 +25,7 @@ if [ $SHELL = '/bin/bash' ]; then
     # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
     if [ $PROFILE_FILE != '.bashrc' ]; then
         BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
-        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE > 0 ]; then
+        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
             PROFILE_FILE='.bashrc'
         fi
     fi
