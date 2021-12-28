@@ -1,25 +1,25 @@
 // Objects
 
-let series = {
-  name: "Dark Knight Trilogy",
-  movies: {
-    first: "Batman Begins",
-    second: "The Dark Knight",
-    third: "The Dark Knight Rises",
-  },
-  numberOfRogues: 5,
-  goodTrilogy: false,
-  qualityOrder: [2, 1, 3],
-}
+//let series = {
+//name: "Dark Knight Trilogy",
+//movies: {
+//first: "Batman Begins",
+//second: "The Dark Knight",
+//third: "The Dark Knight Rises",
+//},
+//numberOfRogues: 5,
+//goodTrilogy: false,
+//qualityOrder: [2, 1, 3],
+//}
 
 // Access name
-// console.log(series["name"]);
-// console.log(series.name);
+//console.log(series.name);
+//console.log('-------------------')
 
 // Access Movies
-// console.log(series["movies"]["first"]);
-// console.log(series.movies.second);
-// console.log(series["movies"].third);
+//console.log(series["movies"]["first"]);
+//console.log(series.movies.second);
+//console.log(series["movies"].third);
 
 // console.log(series)
 
@@ -40,28 +40,28 @@ let series = {
 
 
 // add in favorite quote as a key/value pair
-// series.favoriteQuote = "Swear to me.";
-// console.log(series)
-
+//series.favoriteQuote = "Swear to me.";
+//console.log(series)
+console.log('-------------------')
 
 // using variables to access keys
-// let obj = {
-//   school: "Wisconsin",
-//   footballTeam: "Kinda Bad",
-//   location: "Madison",
-// };
+let obj = {
+  school: "Wisconsin",
+  footballTeam: "Kinda Bad",
+  location: "Madison",
+};
 
-// let someVariable = "school";
-// let some = "football";
-// let variable = "Team";
-// let place = "LoCaTiOn";
+let someVariable = "school";
+let some = "football";
+let variable = "Team";
+let place = "LoCaTiOn";
 
-// console.log(obj[someVariable]);
-// console.log(obj[some + variable]);
-// console.log(obj[place.toLowerCase()]);
+console.log(obj[someVariable]);
+console.log(obj[some + variable]);
+console.log(obj[place.toLowerCase()]);
 
 // // Check if a key is in the object
-// console.log(obj.place)
+console.log(obj.place)
 
 // if (obj.location !== undefined) console.log("This is in the object")
 // if (someVariable in obj) console.log("This is in the object");
@@ -131,35 +131,35 @@ let series = {
 
 // let name = jeff.name
 // let age = jeff.age
+console.log('-------------------');
 
+let character = {
+  name: "Ani",
+  homeWorld: "Tatooine",
+  isMaster: false,
+  favoriteThings: {
+    person: "Padme",
+    activity: "Killing Younglings",
+  },
+};
 
-// let character = {
-//   name: "Ani",
-//   homeWorld: "Tatooine",
-//   isMaster: false,
-//   favoriteThings: {
-//     person: "Padme",
-//     activity: "Killing Younglings",
-//   },
-// }
+//let { name, homeWorld, isMaster, favoriteThings } = character;
+//console.log(name, homeWorld, isMaster, favoriteThings);
 
-// let { name, homeWorld, isMaster, favoriteThings } = character;
-// console.log(name, homeWorld, isMaster, favoriteThings);
+//favoriteThings.jeff = "Jeff";
 
-// favoriteThings.jeff = "Jeff";
+//console.log(character.favoriteThings)
 
-// console.log(character.favoriteThings)
+let { name: aniName, homeWorld: world, isMaster, favoriteThings } = character;
 
-// let { name: aniName, homeWorld: world, isMaster, favoriteThings } = character;
+console.log(aniName, world);
+console.log(character);
 
-// console.log(aniName, world);
-// console.log(character);
-
-// let { favoriteThings: { person, activity } } = character;
-// // console.log(favoriteThings)
-// console.log(person, activity)
-
-
+let { favoriteThings: { person, activity } } = character;
+console.log(favoriteThings)
+console.log(person, activity)
+console.log(character);
+console.log('-------------------')
 
 // let arr = ["Kristen", "Jeff", "Javier"];
 // let [first, second, third] = arr;
@@ -184,14 +184,14 @@ let series = {
 
 
 // Rest operator
-// let yeller = function (...strings) {
-//   let result = strings.map(function (string) {
-//     return string.toUpperCase();
-//   });
-//   return result.join(" ") + "!";
-// }
+let yeller = function (...strings) {
+  let result = strings.map(function (string) {
+    return string.toUpperCase();
+  });
+  return result.join(" ") + "!";
+}
 
-// console.log(yeller("i", "am", "the", "senate"));
+console.log(yeller("i", "am", "the", "senate"));
 
 
 // Spread operator
